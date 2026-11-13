@@ -1,0 +1,18 @@
+name: NoruxSpy
+version: '1.0.0'
+main: net.noruxtime.spy.NoruxSpy
+api-version: '1.20'
+author: NoruxTime
+description: Custom Spy Plugin for NoruxTime (Purpur 1.21.1)
+commands:
+  spy:
+    description: Главная команда слежки NoruxSpy
+    aliases: [nspy, noruxspy]
+    permission: noruxspy.use
+permissions:
+  noruxspy.use:
+    description: Право на использование команды /spy
+    default: op
+  noruxspy.admin:
+    description: Право видеть сообщения администраторов с высоким приоритетом
+    default: op

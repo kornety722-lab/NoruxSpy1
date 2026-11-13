@@ -1,0 +1,43 @@
+# ========================================== #
+#      NoruxTime - Spy System Config         #
+#         Discord: dsc.gg/noruxtime          #
+# ========================================== #
+
+show-own: false
+
+# Команды, за которыми слежка НЕ ведётся (пароли и приватное)
+excluded-commands:
+  - "/login"
+  - "/l"
+  - "/reg"
+  - "/register"
+  - "/changepassword"
+  - "/cp"
+  - "/2fa"
+  - "/spy"
+  - "/nspy"
+
+# Алиасы личных сообщений для детекта ЛС
+pm-commands:
+  - "/msg"
+  - "/tell"
+  - "/w"
+  - "/whisper"
+  - "/m"
+  - "/pm"
+  - "/t"
+  - "/r"
+  - "/reply"
+
+formats:
+  chat: "&8┃ &#41E8C9&lЛОКАЛ &8• &f%player% &8» &7%message%"
+  msg: "&8┃ &#D48BFF&lЛС &8[ввод] &f%player% &#D48BFF→ &f%target% &8» &7%message%"
+  cmd: "&8┃ &#FFCA70&lCMD &8• &f%player% &8» &#FFE0A3%command%"
+
+messages:
+  prefix: "&#A879FF&lNORUX SPY &8» &7"
+  enabled: "Режим слежки &e%mode% &aвключён&7."
+  disabled: "Режим слежки &e%mode% &cвыключён&7."
+  no-permission: "&cУ вас нет прав для использования слежки."
+  reloaded: "&aКонфигурация NoruxSpy успешно перезагружена!"
+  usage: "&7Использование: &e/spy <chat|msg|cmd|all> [on|off]"
